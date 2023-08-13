@@ -1,9 +1,11 @@
 .card-lists {
+  height: calc(100vh - 271px);
   padding: 2.4rem;
   border-radius: 2rem;
   background-color: #f8fafc;
   box-shadow: 5px 15px 30px -5px #dce0ec;
-  margin: 0 12rem;
+  margin: 3.2rem 12rem;
+  flex: 1 0 0;
 }
 
 h2 {
@@ -43,12 +45,11 @@ h2 {
   font-size: 1.6rem;
 }
 
-td{
-  border-bottom: 1px solid #94A3B8;
+td {
+  border-bottom: 1px solid #94a3b8;
 }
 
 .text-wrapper-type {
-
   width: 2rem;
   text-align: center;
 }
