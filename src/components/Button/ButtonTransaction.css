@@ -1,0 +1,26 @@
+.btn-transaction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    width: 27.6rem;
+    height: 12rem;
+    border-radius: 1.1rem;
+    border: 1px solid  #CBD5E1;
+    background-color: #1E3A8A;
+    box-shadow: 5px 15px 30px -5px #DCE0EC;
+    color: #F1F5F9;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    outline: none;
+    
+}
+
+figure{
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: #F1F5F9;
+    border-radius: 0.4rem;
+}
+
