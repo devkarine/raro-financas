@@ -8,9 +8,6 @@ export const BtnTransaction = () => {
                <figure>
                 <img src="src/assets/plus-sm.svg" alt="Sinal de soma" />
                </figure>
-                
-                
-                
                 TRANSAÇÃO
             </button>
         </>

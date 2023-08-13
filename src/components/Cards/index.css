@@ -24,6 +24,16 @@
     justify-content: space-between;
 }
 
+figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figure img{
+    border-radius: 0.6rem;
+}
+
 .card .transaction h2{
     color: #94A3B8;
     font-size: 1.6rem;

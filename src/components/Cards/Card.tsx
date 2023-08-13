@@ -2,10 +2,11 @@ interface CardContent {
     transaction: string;
     img: string;
     value: string;
+    background?: string;
 
 }
 
-export const Card = ({transaction, img, value }: CardContent) =>{
+export const Card = ({transaction, img, value, background }: CardContent) =>{
     const split = value.split(',');
 
     return(
@@ -13,7 +14,10 @@ export const Card = ({transaction, img, value }: CardContent) =>{
             <div className="card">
                 <div className="transaction">
                     <h2>{transaction}</h2>
-                    <img src={`src/assets/${img}`} alt="Seta direcionando crescimento" />
+                    <figure>
+                        <img src={`src/assets/${img}`} style={{background:background}} alt="Seta direcionando crescimento" />
+                    </figure>
+                    
                 </div>
         
                 <p>
