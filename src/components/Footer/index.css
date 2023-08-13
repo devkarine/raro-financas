@@ -1,0 +1,17 @@
+footer {
+  display: flex;
+  align-items: flex-end;
+  color: #1e293b;
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 12rem;
+  background-color: #cbd5e1;
+}
+
+.credit {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
