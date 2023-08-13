@@ -13,9 +13,8 @@ html{
 }
 
 body{
+    background-color: #E2E8F0;
     width: 100%;
     margin: 0 auto;
     min-height: 100vh;
 }
-
-font-family: 'Inter', sans-serif;

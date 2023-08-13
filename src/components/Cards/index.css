@@ -1,0 +1,52 @@
+.cards{
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+    padding: 3.2rem 12rem;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 27.6rem;
+    height: 12rem;
+    padding: 1.4rem 3rem 1.3rem 2.7rem;
+    border-radius: 1.1rem;
+    border: 1px solid #CBD5E1;
+    background-color: #F8FAFC;
+    box-shadow: 5px 15px 30px -5px #DCE0EC;
+    gap: 1.8rem;
+}
+
+.card .transaction{
+    display: flex;
+    justify-content: space-between;
+}
+
+figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figure img{
+    border-radius: 0.6rem;
+}
+
+.card .transaction h2{
+    color: #94A3B8;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.card p{
+    color: #1E293B;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.9rem;
+    font-weight: 800;
+}
+
+.card span{
+    font-size: 1.9rem;
+}
