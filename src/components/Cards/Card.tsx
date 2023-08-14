@@ -2,7 +2,7 @@ interface CardContent {
     transaction: string;
     img: string;
     value: string;
-    background?: string;
+    background: string;
 
 }
 

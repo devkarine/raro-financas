@@ -1,8 +1,11 @@
-import './ButtonTransaction.css'
+import './ButtonTransaction.css';
+
 
 
 export const BtnTransaction = () => {
+    
     return(
+        
         <>
             <button className="btn-transaction">
                <figure>
