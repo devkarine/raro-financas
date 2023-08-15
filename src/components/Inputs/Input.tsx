@@ -32,12 +32,12 @@ export const Inputs = () => {
         placeholder="Digite o valor da sua transação"
       />
 
-      <label htmlFor="tipo">Tipo</label>
+      <label htmlFor="tipo" >Tipo</label>
       <div className="radio">
-        <input type="radio" name="tipo" value="entrada" />
+        <input className='inputRadio' type="radio" name="tipo" value="entrada" />
         <img src="src/assets/trending-up.svg" alt="" />
         Entradas
-        <input type="radio" name="tipo" id="saida" value="saida" />
+        <input className='inputRadio' type="radio" name="tipo" id="saida" value="saida" />
         <img src="src/assets/trending-down.svg" alt="" />
         Saídas
       </div>

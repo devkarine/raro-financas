@@ -1,5 +1,6 @@
 
 import './App.css';
+import { useState } from 'react';
 import { Header } from './components/Header/index';
 import { Cards } from './components/Cards/Cards';
 import { Lists } from './components/Lists/Lists';
@@ -8,12 +9,14 @@ import { Footer } from './components/Footer/Footer';
 
 
 function App() {
+  const [mostrarModal, setMostrarModal] = useState(false)
   return (
     <>
       <Header />
-      <Cards />
+      <Cards clicar={() => setMostrarModal(true)} />
       <Lists />
-      <Modal />
+      
+      {mostrarModal &&  <Modal/>}
       <Footer />
       
     </>

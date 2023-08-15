@@ -6,13 +6,19 @@ color: #1E293B;
 
 input {
   display: flex;
-  height: 56px;
+  height: 30px;
   padding: 8px 16px;
   align-items: center;
   gap: 10px;
-  border-radius: 12px;
+  border-radius: 8px;
   border: 1px solid #e2e8f0;
   background-color: #fff;
+  outline:1px solid #94A3B8 ;
+  
+}
+
+input:active{
+  outline:1px solid #94A3B8 ;
 }
 
 input::placeholder{
@@ -20,4 +26,8 @@ input::placeholder{
     font-weight: 400;
     color: #94A3B8;
 
+}
+
+.inputRadio{
+  outline: none;
 }
