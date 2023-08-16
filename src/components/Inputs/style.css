@@ -1,0 +1,31 @@
+label {
+  color: #1e293b;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+input {
+  display: flex;
+  height: 30px;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background-color: #fff;
+  outline: 1px solid #94a3b8;
+}
+
+input:active {
+  outline: 1px solid #94a3b8;
+}
+
+input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #94a3b8;
+}
+
+.inputRadio {
+  outline: none;
+}

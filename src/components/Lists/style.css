@@ -6,9 +6,10 @@
   box-shadow: 5px 15px 30px -5px #dce0ec;
   margin: 3.2rem 12rem;
   flex: 1 0 0;
+  overflow: auto;
 }
 
-h2 {
+.card-lists h2 {
   color: #1e293b;
   text-align: center;
   font-size: 2rem;
@@ -17,6 +18,7 @@ h2 {
 
 .lists {
   padding: 2.4rem;
+  border-collapse: collapse;
 }
 
 .table-header {

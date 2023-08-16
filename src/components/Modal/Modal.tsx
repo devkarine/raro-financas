@@ -1,44 +1,34 @@
-import './index.css';
-import { BtnModal } from '../Button/BtnModal';
+import './style.css';
 import { Inputs } from '../Inputs/Input';
-import { useState } from "react";
+import { TransactionProps } from '../../types';
 
+interface ModalProps {
+  pegarValor: (transaction: TransactionProps) => void;
+  mostrarModal: boolean;
+  clicar: (mostrarModal: boolean) => void;
+}
 
-
-export const Modal = () => {
-  const [isModalVisible, setIsModalVisible] = useState(false);
-  const closeModal = () => {
-    setIsModalVisible(false);
-    
-  };
-
+export const Modal = ({ pegarValor, mostrarModal, clicar }: ModalProps) => {
   return (
     <>
-      <div className={`modal ${isModalVisible && 'open'}`}>
+      <div className={`modal ${mostrarModal && 'open'}`}>
         <div className="wrapper-modal">
-        <form >
-          <h2>Nova Transação</h2>
+          <form
+            onSubmit={e => {
+              e.preventDefault();
+              e.currentTarget.reset();
+            }}
+          >
+            <h2>Nova Transação</h2>
 
-          <Inputs/>
-          
-
-          <div className="btns">
-          <BtnModal
-              nome="Cancelar"
-              img="x.svg"
-              background="#F1F5F9"
-              color="#1E40AF"
-              onClick={closeModal}
+            <Inputs
+              clicar={(mostrarModal: boolean) => clicar(mostrarModal)}
+              pegarValor={(transaction: TransactionProps) =>
+                pegarValor(transaction)
+              }
             />
-            {isModalVisible ? <Modal/> : null}
-            <BtnModal nome='Adicionar' img='check.svg' background='#1E40AF' color='#F1F5F9' />
-          </div>
-          
-
-            
-        </form>
+          </form>
         </div>
-        
       </div>
     </>
   );
