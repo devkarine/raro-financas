@@ -1,0 +1,57 @@
+.card-lists {
+  height: calc(100vh - 271px);
+  padding: 2.4rem;
+  border-radius: 2rem;
+  background-color: #f8fafc;
+  box-shadow: 5px 15px 30px -5px #dce0ec;
+  margin: 3.2rem 12rem;
+  flex: 1 0 0;
+  overflow: auto;
+}
+
+.card-lists h2 {
+  color: #1e293b;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.lists {
+  padding: 2.4rem;
+  border-collapse: collapse;
+}
+
+.table-header {
+  width: 100%;
+}
+
+.header-lists,
+.header-lists-type {
+  color: #94a3b8;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: -1px;
+  text-align: center;
+}
+
+.header-lists-type {
+  width: 2rem;
+}
+
+.text-wrapper {
+  padding: 0.8rem;
+  width: 27.8rem;
+  height: 2.8rem;
+  color: #1e293b;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+td {
+  border-bottom: 1px solid #94a3b8;
+}
+
+.text-wrapper-type {
+  width: 2rem;
+  text-align: center;
+}
