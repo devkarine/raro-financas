@@ -1,31 +1,28 @@
 import './index.css';
-import { BtnModal } from '../Button/BtnModal';
 import { Inputs } from '../Inputs/Input';
+import { TransactionProps } from '../../types';
+
+interface ModalProps{
+   pegarValor:(transaction:TransactionProps)=> void;
+   mostrarModal: boolean;
+   clicar: (mostrarModal: boolean) => void;
+
+}
 
 
-
-
-export const Modal = () => {
+export const Modal = ({pegarValor, mostrarModal, clicar}: ModalProps) => {
+  
 
   return (
     <>
-      <div className="modal" >
+      <div className={`modal ${mostrarModal && 'open'}`} >
         <div className="wrapper-modal">
-        <form >
+        <form onSubmit={e => e.preventDefault()} >
           <h2>Nova Transação</h2>
 
-          <Inputs/>
+          <Inputs clicar={(mostrarModal: boolean) => clicar(mostrarModal)} pegarValor={(transaction: TransactionProps)=> pegarValor(transaction)}/>
           
-          <div className="btns">
-          <BtnModal
-              nome="Cancelar"
-              img="x.svg"
-              background="#F1F5F9"
-              color="#1E40AF"
-            />
-            
-            <BtnModal nome='Adicionar' img='check.svg' background='#1E40AF' color='#F1F5F9' />
-          </div>
+         
           
 
             

@@ -5,10 +5,10 @@ interface ButtonProps{
 }
 
 
-export const BtnTransaction = (props: ButtonProps) => {
+export const BtnTransaction = ({clicar}: ButtonProps) => {
     return(
         <>
-            <button onClick={props.clicar} className="btn-transaction">
+            <button onClick={clicar} className="btn-transaction">
                <figure>
                 <img src="src/assets/plus-sm.svg" alt="Sinal de soma" />
                </figure>

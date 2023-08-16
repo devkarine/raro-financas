@@ -1,6 +1,11 @@
+import { TransactionProps } from '../../types';
 import './index.css';
 
-export const Lists = () => {
+interface ListProps{
+  transactions: TransactionProps[]
+}
+
+export const Lists = ({transactions}: ListProps) => {
  
   return (
     <section className='card-lists'>
@@ -18,15 +23,18 @@ export const Lists = () => {
           </tr>
         </thead>
 
-        <tbody className="table-row">
+        {transactions.map((transaction, index)=>(
+          <tbody key={index} className="table-row">
+
           <tr className="wrapper">
-            <td className="text-wrapper"></td>
-            <td className="text-wrapper"></td>
-            <td className="text-wrapper"></td>
-            <td className="text-wrapper"></td>
-            <td className="text-wrapper-type"> </td>
+            <td className="text-wrapper">{transaction.nome}</td>
+            <td className="text-wrapper">{transaction.data}</td>
+            <td className="text-wrapper">{transaction.categoria}</td>
+            <td className="text-wrapper">{transaction.valor}</td>
+            <td className="text-wrapper-type">{transaction.tipo} </td>
           </tr>
         </tbody>
+        ))}
 
       </table>
     </section>
