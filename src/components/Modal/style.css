@@ -11,41 +11,39 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.open{
+.open {
   display: flex;
 }
 
 .wrapper-modal {
-  width: 500px;
-  height: 540px;
+  width: 600px;
+  height: 640px;
   padding: 32px;
   border-radius: 40px;
-  background-color: #F1F5F9;
+  background-color: #f1f5f9;
 }
 
-h2{
+h2 {
   font-size: 3.2rem;
   font-weight: 600;
-  border-bottom: 4px solid #1E40AF;
-  color: #27272A;
+  border-bottom: 4px solid #1e40af;
+  color: #27272a;
   padding: 10px;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   gap: 10.8px;
 }
 
-.btns{
+.btns {
   display: flex;
   gap: 1.6rem;
 }
 
-.radio{
+.radio {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  
 }
-

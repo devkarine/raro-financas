@@ -1,4 +1,4 @@
-import './Inputs.css';
+import './style.css';
 import { useState } from 'react';
 import { TransactionProps } from '../../types';
 import { BtnModal } from '../Button/BtnModal';
@@ -6,13 +6,10 @@ import { BtnModal } from '../Button/BtnModal';
 interface InputProps {
   pegarValor: (transaction: TransactionProps) => void;
   clicar: (mostrarModal: boolean) => void;
-
 }
 
-
-
 export const Inputs = ({ pegarValor, clicar }: InputProps) => {
-  const [valor, setValor] = useState({
+  const [valor, setValor] = useState<TransactionProps>({
     nome: '',
     data: '',
     categoria: '',
@@ -20,9 +17,9 @@ export const Inputs = ({ pegarValor, clicar }: InputProps) => {
     tipo: ''
   });
 
-  function test(){
-    pegarValor(valor)
-    clicar(false)
+  function test() {
+    pegarValor(valor);
+    clicar(false);
   }
 
   return (
@@ -67,7 +64,7 @@ export const Inputs = ({ pegarValor, clicar }: InputProps) => {
           className="inputRadio"
           type="radio"
           name="tipo"
-          value="entrada"
+          value="+"
         />
         <img src="src/assets/trending-up.svg" alt="" />
         Entradas
@@ -77,7 +74,7 @@ export const Inputs = ({ pegarValor, clicar }: InputProps) => {
           type="radio"
           name="tipo"
           id="saida"
-          value="saida"
+          value="-"
         />
         <img src="src/assets/trending-down.svg" alt="" />
         Saídas
