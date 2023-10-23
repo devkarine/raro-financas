@@ -16,7 +16,7 @@ export const Card = ({ transaction, img, value, background }: CardContent) => {
           <h2>{transaction}</h2>
           <figure>
             <img
-              src={`public/${img}`}
+              src={img}
               style={{ background: background }}
               alt="Seta direcionando crescimento"
             />
