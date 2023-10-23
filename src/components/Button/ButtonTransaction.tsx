@@ -9,7 +9,7 @@ export const BtnTransaction = ({ clicar }: ButtonProps) => {
     <>
       <button onClick={clicar} className="btn-transaction">
         <figure>
-          <img src="public/plus-sm.svg" alt="Sinal de soma" />
+          <img src="plus-sm.svg" alt="Sinal de soma" />
         </figure>
         TRANSAÇÃO
       </button>
