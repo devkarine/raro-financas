@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from 'react';
-import { Header } from './components/Header';
+import { Header } from './components/header';
 import { Cards } from './components/Cards/Cards';
 import { Lists } from './components/Lists/Lists';
 import { Modal } from './components/Modal/Modal';
