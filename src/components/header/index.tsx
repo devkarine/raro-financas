@@ -5,7 +5,7 @@ export const Header = () => {
     <header className="header">
       <div className="logo">
         <img
-          src="public/credit-card.svg"
+          src="credit-card.svg"
           alt="Icone de cartão de crédito"
         />
         <h1>Raro Finanças</h1>
@@ -15,7 +15,7 @@ export const Header = () => {
           <p className="name">Karine Pereira</p>
           <p className="email">karinedeveloper@gmail.com</p>
         </div>
-        <img src="public/PROFILE.png" alt="Profile" />
+        <img src="PROFILE.png" alt="Profile" />
       </div>
     </header>
   );

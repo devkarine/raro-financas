@@ -11,7 +11,7 @@ interface Button {
 export const BtnModal = ({ nome, img, background, color, onClick }: Button) => {
   return (
     <button style={{ background: background, color: color }} onClick={onClick}>
-      <img src={`public/${img}`} alt="" />
+      <img src={img} alt="" />
       {nome}
     </button>
   );
